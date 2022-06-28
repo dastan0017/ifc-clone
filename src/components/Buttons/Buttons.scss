@@ -1,0 +1,48 @@
+@import 'styles/variables';
+
+.add_btn {
+  background: $dark-background;
+  border-radius: 8px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+
+  & span {
+    margin-right: 12px;
+  }
+}
+
+.edit_btn,
+.delete_btn,
+.plus_btn {
+  background: none;
+  border: none;
+  padding: 0 8px;
+}
+
+.edit_btn {
+  border-right: 1px solid #e8eaec;
+}
+
+.plus_btn {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+
+  & span {
+    margin-left: 8px;
+  }
+}
+
+.light_btn {
+  & span {
+    color: #162938;
+  }
+
+  &:hover {
+    background: #ededed;
+  }
+}

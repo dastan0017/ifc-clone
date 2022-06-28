@@ -1,0 +1,136 @@
+@import 'styles/variables';
+
+.btn {
+  padding: 0.6rem 1.0667rem;
+  line-height: 1.333rem;
+  font-weight: 600;
+  font-size: 0.9333rem;
+  line-height: 1.3333rem;
+  display: flex;
+  align-items: center;
+  &_icon {
+    > span {
+      width: 1.3333rem;
+      height: 1.3333rem;
+      margin-right: 10px;
+      > svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  &_iconblue {
+    > span {
+      > svg {
+        color: map-get($colors, 'dark_indigo') !important;
+        fill: map-get($colors, 'dark_indigo') !important;
+      }
+    }
+  }
+  &_iconwhite {
+    > span {
+      > svg {
+        color: map-get($colors, 'light_indigo') !important;
+        fill: map-get($colors, 'light_indigo') !important;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  background-color: #162938;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 10px;
+  color: map-get($colors, 'light_indigo');
+  border: none;
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    background-color: #1d8248;
+    > span {
+      > svg {
+        color: map-get($colors, 'light_indigo') !important;
+        fill: map-get($colors, 'light_indigo') !important;
+      }
+    }
+  }
+  &:active:not(:disabled) {
+    background-color: map-get($colors, 'dark_indigo');
+    > span {
+      > svg {
+        color: map-get($colors, 'light_indigo') !important;
+        fill: map-get($colors, 'light_indigo') !important;
+      }
+    }
+  }
+}
+.show > .btn-outline-primary {
+  &.dropdown-toggle {
+    box-shadow: none !important;
+    background-color: transparent;
+    border: 1px solid #ccd5e0;
+    color: map-get($colors, 'dark_indigo');
+    > span {
+      > svg {
+        color: map-get($colors, 'dark_indigo') !important;
+        fill: map-get($colors, 'dark_indigo') !important;
+      }
+    }
+  }
+}
+
+.show > .btn-outline-primary,
+.btn-outline-primary {
+  border: 1px solid #ccd5e0;
+  border-radius: 2rem;
+  color: map-get($colors, 'dark_indigo');
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    box-shadow: none !important;
+    background-color: map-get($colors, 'indigo');
+    color: map-get($colors, 'light_indigo');
+    > span {
+      > svg {
+        color: map-get($colors, 'light_indigo') !important;
+        fill: map-get($colors, 'light_indigo') !important;
+      }
+    }
+  }
+  &:active:not(:disabled) {
+    background-color: map-get($colors, 'dark_indigo') !important;
+    border-color: map-get($colors, 'dark_indigo') !important;
+    > span {
+      > svg {
+        color: map-get($colors, 'light_indigo') !important;
+        fill: map-get($colors, 'light_indigo') !important;
+      }
+    }
+  }
+}
+
+.btn-secondary {
+  background: none !important;
+  color: #201f1e !important;
+  border: 1px solid #8a8886;
+  justify-content: center;
+}
+
+.erase-filter-btn {
+  background: map-get($colors, 'white');
+  border: 1px solid #0078d4;
+  border-radius: 2px;
+  color: #0078d4;
+  height: 2.1333rem;
+  font-weight: normal;
+  &:hover,
+  &:focus,
+  &:active {
+    background: map-get($colors, 'white');
+    color: #0078d4;
+  }
+  > i {
+    margin-left: 0.2rem;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+}

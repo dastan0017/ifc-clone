@@ -1,0 +1,24 @@
+@import '~react-toastify/dist/ReactToastify.css';
+@import 'styles/variables';
+
+// /** Used to define container behavior: width, position: fixed etc... **/
+
+.Toastify__toast-container {
+  z-index: 9999999;
+  width: 18rem;
+
+  &--top-right {
+    top: 4em;
+  }
+}
+
+/** Classes for the displayed toast **/
+.Toastify__toast {
+  background: map-get($colors, 'white');
+  box-shadow: 0px 4.8px 14.4px rgba(0, 0, 0, 0.18);
+  border-radius: 0.2667rem;
+  min-height: 2.9333rem;
+  align-items: center;
+  color: map-get($colors, 'dark_gray');
+  justify-content: flex-start !important;
+}

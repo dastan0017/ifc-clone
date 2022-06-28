@@ -1,0 +1,26 @@
+.emptyPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyPage_content {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    color: #737f88;
+    font-size: 18px;
+    margin: 2rem;
+  }
+
+  & .add_btn {
+    position: static !important;
+  }
+}

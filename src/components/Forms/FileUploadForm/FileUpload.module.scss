@@ -1,0 +1,73 @@
+.upload_area {
+  width: 100%;
+  height: 180px;
+  border: 1px dashed #e8eaec;
+  border-radius: 12px;
+  margin-bottom: 20px !important;
+  flex-wrap: nowrap;
+
+  .file_bar {
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+
+  .info_bar {
+    width: 68%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+
+    & h3 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 135%;
+    }
+
+    & p {
+      color: #868588;
+    }
+
+    .file_container {
+      position: relative;
+      width: 100%;
+      height: fit-content;
+      justify-content: flex-start;
+      margin: 12px 0 24px 0 !important;
+    }
+  }
+}
+
+.file {
+  width: 100%;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+@keyframes shaking {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.is_dragging {
+  background: #f7fff5;
+  border: 1px dashed #c7edcf;
+}
+
+.shaking_animation {
+  animation-name: shaking;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition: transform 250ms linear;
+}

@@ -1,0 +1,20 @@
+// TODO: Вынести все цвета в переменные и переписать все на переменные
+$dark-background: #2d3e4b;
+$gray-color: #a2a9af;
+$gray-background: #ebebeb;
+$light-gray-background: #f4f4f4;
+$main-background: #fafafa;
+
+$colors: (
+  'main_color': #1a202c,
+  'indigo': #5b6bd5,
+  'indigo_2': #6881e7,
+  'dark_indigo': #44448e,
+  'light_indigo': #ecf4ff,
+  'light_indigo_2': #f4f6fa,
+  'gray': #718096,
+  'light_gray': #e2e8f0,
+  'dark_gray': #4a5567,
+  'white': #fff,
+  'main_background': #fafafa,
+);

@@ -1,0 +1,76 @@
+.password_input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+
+  & input {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+
+  & button {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    background: none;
+  }
+}
+
+.generate_key_input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  border: 1px solid #e8eaec;
+  background: #f8f8f9;
+  border-radius: 4px;
+  padding-left: 1rem;
+
+  & input {
+    width: 60% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none;
+  }
+  & button {
+    border: none;
+    outline: none;
+    background: none;
+    white-space: nowrap;
+    color: #455460;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+}
+
+.search_bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4000px;
+  margin-right: 12px;
+
+  & label {
+    width: 100%;
+  }
+
+  & input {
+    background: #f8f8f9 !important;
+    padding-left: 34px;
+  }
+}
+
+.search_icon {
+  position: absolute;
+  left: 12px;
+}

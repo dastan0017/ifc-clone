@@ -1,0 +1,26 @@
+.react-date-picker {
+  width: 99%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+
+  &__wrapper {
+    border: none !important;
+  }
+
+  &__inputGroup {
+    display: flex;
+  }
+
+  & input {
+    padding: 0 1.5rem;
+    margin: 0;
+
+    &:focus {
+      background: white;
+    }
+  }
+}

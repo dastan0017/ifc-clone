@@ -1,0 +1,149 @@
+.table_container {
+  height: 85vh;
+  background-color: white;
+  border-radius: 4px;
+
+  & table {
+    border: none !important;
+    border-radius: 4px !important;
+  }
+  & thead th {
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    padding: 14px !important;
+    vertical-align: middle;
+  }
+
+  & thead tr {
+    position: relative;
+  }
+
+  // actions column
+  & thead tr th:last-child {
+    float: right;
+  }
+
+  //   id column
+  & thead tr th:first-child {
+    float: left;
+    margin-left: 1rem !important;
+    margin-top: 0.3rem;
+  }
+
+  & tbody tr:nth-child(odd) {
+    background: #f7fafc;
+    border: none;
+  }
+
+  & tbody td {
+    padding: 14px !important;
+    border: none !important;
+  }
+
+  & tbody tr:hover {
+    background: #f2f2f2 !important;
+    border: none;
+  }
+
+  & .action_cell {
+    min-width: 73px;
+    float: right;
+  }
+
+  & .id_cell {
+    float: left;
+    margin-left: 1rem !important;
+  }
+
+  & .react-bootstrap-table {
+    justify-content: space-between;
+    overflow: scroll;
+    height: 100%;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9;
+  content: '';
+}
+
+.table_pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px 2px;
+  border-radius: 4px;
+  padding: 4px;
+
+  & .page_size_changer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & button {
+      border: 0.1px solid #dee2e6;
+    }
+
+    & p {
+      margin-right: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  & .caret {
+    display: none;
+  }
+
+  & .page-item.active .page-link {
+    background: #343a40;
+    border-color: #343a40;
+  }
+
+  & .pagination {
+    min-width: fit-content;
+    & li a {
+      color: black;
+      text-align: center;
+    }
+
+    & .active {
+      font-weight: bold;
+    }
+  }
+
+  & .custom-page-dropwown {
+    & .dropdown-menu {
+      width: 100% !important;
+      position: absolute;
+      top: -7rem;
+      left: 0.5rem;
+      width: 40px !important;
+      min-width: 40px !important;
+
+      & .dropdown-item {
+        width: 100% !important;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import 'bootstrap';
+@import 'toastify';
+@import 'buttons';
+@import 'icons';
+@import 'reset';
+@import 'table';
+@import 'variables';
+@import 'global';
+@import 'forms';
+
+html {
+  font-size: 15px;
+  @media screen and (max-width: 1368px) {
+    font-size: 14px;
+  }
+}

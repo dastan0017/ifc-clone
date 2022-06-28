@@ -1,0 +1,71 @@
+.page_content {
+  position: relative;
+
+  & .window_container {
+    width: 400px;
+    height: 100%;
+    padding: 16px 24px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -10px 0px 6px -4px rgba(0, 0, 0, 0.12);
+    flex-wrap: nowrap;
+
+    & .window_header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 32px;
+
+      & button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 200;
+        font-size: 50px;
+        width: 32px;
+        height: 32px;
+        margin-top: -5px;
+      }
+    }
+
+    & form {
+      height: 100%;
+      width: 100%;
+      height: 100%;
+      margin-top: 14px;
+
+      & .window_body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        height: 88%;
+        width: 100%;
+
+        & label,
+        & input {
+          width: 100%;
+        }
+      }
+
+      & .window_footer {
+        justify-self: flex-end;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: flex-start;
+
+        & button {
+          height: 40px;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}

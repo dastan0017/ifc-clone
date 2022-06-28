@@ -1,0 +1,81 @@
+@import 'styles/variables';
+
+.tableContentHeight {
+  height: calc(100vh - 17rem);
+}
+
+.tableContentHeightWithFilter {
+  height: calc(100vh - 24rem);
+}
+
+.tableContentHeightWithCategoriesNameForAdmin {
+  height: calc(100vh - 21rem);
+}
+
+.tableContentHeightWithCategoriesName {
+  height: calc(100vh - 25rem);
+}
+
+.rc-table {
+  .rc-table-measure-row {
+    visibility: collapse;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+
+    th {
+      font-weight: bold;
+
+      span {
+        padding: 0.9333rem;
+      }
+    }
+
+    .rc-table-tbody {
+      tr {
+        background-color: map-get($colors, 'white');
+        &:hover {
+          background-color: map-get($colors, 'light_indigo_2');
+          td {
+            .showWhenHovered {
+              visibility: visible;
+              text-align: right;
+
+              i {
+                cursor: pointer;
+              }
+            }
+            .hideWhenHovered {
+              display: none !important;
+            }
+          }
+        }
+        .showWhenHovered {
+          visibility: hidden;
+          text-align: right;
+        }
+        .hideWhenHovered {
+          visibility: visible !important;
+        }
+        td {
+          padding: 14px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          word-wrap: normal;
+          line-height: 16px;
+          &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+          &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

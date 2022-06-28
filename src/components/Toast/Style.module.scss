@@ -1,0 +1,23 @@
+.iconWrapper {
+  margin: 0 1rem;
+}
+.body {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.9333rem;
+  margin: 0 !important;
+  position: absolute;
+  top: 100px;
+
+  .closeButton {
+    margin-left: auto;
+  }
+}
+
+.toastContainer {
+  display: flex;
+  align-items: center;
+}

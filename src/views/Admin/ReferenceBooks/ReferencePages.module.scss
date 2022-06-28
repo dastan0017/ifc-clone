@@ -1,0 +1,78 @@
+.container {
+  background: #fafafa;
+
+  & .sidebar,
+  & .content {
+    background: white;
+  }
+}
+.sidebar {
+  width: 20%;
+  padding: 0;
+  border-radius: 4px;
+  margin-right: 16px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 3px 10px rgba(51, 51, 51, 0.03);
+
+  & a {
+    width: 94%;
+    height: 32px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    font-weight: 600;
+
+    &:active,
+    &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:hover {
+      background: #ededed;
+    }
+  }
+}
+
+.content {
+  border-radius: 4px;
+  width: 80%;
+  height: 80vh;
+  background: transparent !important;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+
+.active_link {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.11);
+}
+
+.table_container {
+  position: relative;
+  width: 100%;
+  height: 90%;
+
+  & table thead tr th:first-child div {
+    margin-left: 0 !important;
+  }
+}
+
+.table_header {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px !important;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  & button {
+    max-height: 36px;
+    white-space: nowrap;
+  }
+}

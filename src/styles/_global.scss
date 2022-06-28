@@ -1,0 +1,146 @@
+@import 'styles/variables';
+
+h2 {
+  font-weight: 600;
+  font-size: 1.8667rem;
+  line-height: 112.5%;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 112.5%;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.0667rem;
+  line-height: 1.3333rem;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.block_wrap {
+  padding: 1.6rem;
+  background-color: map-get($colors, 'white');
+  border-radius: 1.0667rem;
+}
+
+.small_content {
+  &.indigo {
+    color: #5b6bd5;
+  }
+  &.gray {
+    color: map-get($colors, 'dark_gray');
+  }
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: map-get($colors, 'gray');
+}
+
+img {
+  border-radius: 8px;
+  &.responsive {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon_indigo {
+  color: #6881e7;
+  fill: #6881e7;
+}
+
+.icon_gray {
+  color: #4a5567;
+  fill: #4a5567;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.form_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .form_inner {
+    background-color: map-get($colors, 'white');
+    border-radius: 1.0667rem;
+    padding: 1.0667rem;
+  }
+}
+
+.scrollContainerHeight {
+  overflow: scroll;
+  max-height: calc(100vh - 100px);
+}
+.scroll-container {
+  &::-webkit-scrollbar {
+    width: 0.3333rem;
+    height: 0.3333rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: tre;
+    -webkit-border-radius: 0.3333rem;
+    border-radius: 0.3333rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0.3333rem;
+    border-radius: 0.3333rem;
+    background: map-get($colors, 'dark-grey');
+  }
+}
+
+.mock-preview {
+  border: 1px solid #cecece;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background: #bc4e9c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f80759, #bc4e9c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bebebe;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  background-clip: padding-box; // <== make the border work
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-content {
+  padding: 0 12px;
+}

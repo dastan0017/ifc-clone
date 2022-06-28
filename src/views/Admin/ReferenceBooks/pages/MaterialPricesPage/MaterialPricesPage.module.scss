@@ -1,0 +1,40 @@
+.material_prices_table {
+  width: 100%;
+  // overflow: scroll;
+  white-space: nowrap;
+  // box-shadow: inset 15px 0px 20px -26px rgba(0, 0, 0, 0.75), inset -15px 0px 20px -26px rgba(0, 0, 0, 0.75);
+
+  .table_container thead tr th:last-child {
+    float: initial;
+  }
+
+  .table_container thead tr th {
+    white-space: nowrap;
+  }
+
+  & .custom_select {
+    position: absolute !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    // background: transparent !important;
+    width: 100%;
+    padding-right: 1rem !important;
+    border: none !important;
+  }
+
+  & table {
+    border-radius: 4px !important;
+    border: none !important;
+    display: block;
+
+    & tbody tr td:first-child {
+      max-width: 400px;
+      white-space: initial;
+    }
+
+    & .dropdown {
+      position: relative;
+    }
+  }
+}

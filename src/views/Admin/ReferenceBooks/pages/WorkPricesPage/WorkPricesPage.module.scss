@@ -1,0 +1,39 @@
+.table_container thead tr th:last-child {
+  float: initial;
+}
+
+.table_container thead tr th {
+  white-space: nowrap;
+}
+
+.material_prices_table {
+  width: 100%;
+  // overflow: scroll;
+  white-space: nowrap;
+  // box-shadow: inset 15px 0px 20px -26px rgba(0, 0, 0, 0.75), inset -15px 0px 20px -26px rgba(0, 0, 0, 0.75);
+
+  & table {
+    border-radius: 4px !important;
+    border: none !important;
+
+    & tbody tr td:first-child {
+      max-width: 400px;
+      white-space: initial;
+    }
+
+    & .dropdown {
+      position: relative;
+    }
+
+    & .custom_select {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      // background: transparent;
+      width: 100%;
+      padding-right: 1rem !important;
+      border: none;
+    }
+  }
+}
